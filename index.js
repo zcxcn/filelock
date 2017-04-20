@@ -1,6 +1,6 @@
  const fs = require('fs');
  const fsExtra = require('fs-extra');
- const util = require('../util');
+ const util = require('./util');
 
 
  class Locker {

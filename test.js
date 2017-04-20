@@ -2,7 +2,7 @@ const Locker = require('./index.js');
 const path = require('path');
 const assert = require('assert')
 
-let locker = new Locker(path.resolve(__dirname, '../../cache/changeip.lock'), 1000 * 3);
+let locker = new Locker(path.resolve(__dirname, './demo.lock'), 1000 * 3);
 locker.lock();
 console.log(locker.isLocked())
 // locker.unlock()
