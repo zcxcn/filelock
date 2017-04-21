@@ -1,7 +1,7 @@
 # Filelock
 a tool to create/remove filelock or waiting filelock to unlock.
 
-## Method
+## Usage
 
 ```javascript
  const Locker = require('./index.js');
