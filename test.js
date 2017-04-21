@@ -4,10 +4,9 @@ const assert = require('assert')
 
 let locker = new Locker(path.resolve(__dirname, './demo.lock'), 1000 * 3);
 locker.lock();
-locker
-	.waitUntilUnlock()
+locker.waitUntilUnlock()
 	.then(function() {
-		//dosth
+		console.log('unlock');
 	})
 
 console.log(locker.isLocked())
