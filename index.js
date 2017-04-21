@@ -32,7 +32,7 @@
  					if (!t.isLocked()) {
  						resolve();
  					} else {
- 						log('waiting');
+ 					// 	log('waiting');
  						return util.sleep(1000)
  							.then(function() {
  								wait(resolve, reject)
