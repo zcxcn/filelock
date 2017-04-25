@@ -1,4 +1,4 @@
-const Locker = require('./index.js');
+const Locker = require('./lib/filelock.js');
 const path = require('path');
 const assert = require('assert')
 
@@ -6,10 +6,12 @@ let locker = new Locker(path.resolve(__dirname, './demo.lock'), 1000 * 3);
 locker.lock();
 locker.waitUntilUnlock()
 	.then(function() {
-		console.log('unlock');
+		console.log('wait success');
 	})
 
 console.log(locker.isLocked())
+assert.equal(locker.isLocked(),true)
+
 // locker.unlock()
 setTimeout(() => {
 	console.log(locker.isLocked())

@@ -4,11 +4,16 @@
   "description": "文件锁",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test.js"
+    "test": "node ./test.js",
+	"build": "babel src -d lib"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
   }
 }
