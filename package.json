@@ -7,6 +7,10 @@
     "test": "node ./test.js",
     "build": "babel src -d lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcxcn/filelock.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
